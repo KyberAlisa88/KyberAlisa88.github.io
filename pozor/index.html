@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Позор — феномен, механизм и хронология</title>
+<style>
+:root{--bg:#100b18;--panel:#181022;--panel2:#21162d;--text:#f1ebf7;--muted:#bdaec9;--line:#3e2b50;--accent:#b99aff;--accent2:#eadbff;--pink:#ffc1d2;--green:#c8f0d2;--gold:#ffe6a6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 12% 0,rgba(185,154,255,.15),transparent 30rem),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}
+.wrap{max-width:1100px;margin:auto;padding:26px}.hero,section{background:rgba(24,16,34,.95);border:1px solid var(--line);border-radius:20px;box-shadow:0 14px 34px rgba(0,0,0,.28)}
+.hero{padding:48px 34px;margin:20px 0 26px;background:linear-gradient(145deg,#251735,#15101e)}section{padding:28px;margin:22px 0}
+.eyebrow{text-transform:uppercase;letter-spacing:.14em;color:var(--accent);font-weight:800;font-size:.78rem}h1{font-size:clamp(2.8rem,8vw,5.8rem);line-height:.95;margin:.2rem 0 .8rem;letter-spacing:-.05em}h2{margin:.1rem 0 1rem;font-size:1.85rem}h3{margin:.2rem 0 .45rem}p{margin:.55rem 0 1rem}
+.lead{font-size:1.17rem;color:#dfd3e8;max-width:900px}.definition{margin-top:24px;padding:22px;border-left:4px solid var(--accent);background:rgba(185,154,255,.08);border-radius:12px;font-size:1.08rem}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}nav a{color:#eee4f8;text-decoration:none;border:1px solid var(--line);background:#21152e;padding:7px 11px;border-radius:999px;font-size:.9rem}
+.kicker{font-size:1.35rem;font-weight:850;color:var(--accent2)}.note,.quote{padding:15px 17px;border-radius:12px;background:#120d19;border:1px solid var(--line)}.quote{font-style:italic}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card{background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:17px}.tag{display:inline-block;padding:3px 8px;border-radius:999px;background:#332044;color:#eadbff;font-size:.75rem;font-weight:800}.core{background:#4b2136;color:#ffd9e4}.meta{background:#493812;color:#ffeab6}.archive{background:#193828;color:#d3f7dd}
+table{width:100%;border-collapse:collapse}th,td{padding:12px 13px;border-bottom:1px solid var(--line);vertical-align:top}th{text-align:left;background:#251831}tr:last-child td{border-bottom:none}
+.loop{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;align-items:center;margin-top:15px}.node{min-height:96px;display:flex;align-items:center;justify-content:center;text-align:center;padding:12px;background:#21152e;border:1px solid var(--line);border-radius:13px;font-weight:800}.arrow{text-align:center;color:var(--accent);font-size:1.4rem;font-weight:900}
+.timeline{position:relative}.timeline:before{content:"";position:absolute;left:14px;top:5px;bottom:5px;width:2px;background:linear-gradient(var(--accent),rgba(185,154,255,.1))}.event{position:relative;padding-left:44px;margin:0 0 18px}.event:before{content:"";position:absolute;left:7px;top:.55rem;width:16px;height:16px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px rgba(185,154,255,.12)}.date{color:var(--accent2);font-weight:850}
+details{background:#15101d;border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0}summary{cursor:pointer;font-weight:800;color:#eee3fa}.small{font-size:.9rem;color:var(--muted)}
+footer{padding:12px 4px 36px;color:var(--muted);font-size:.9rem}
+@media(max-width:820px){.grid,.loop{grid-template-columns:1fr}.arrow{transform:rotate(90deg)}.wrap{padding:14px}.hero{padding:34px 22px}section{padding:21px}}
+</style>
+</head>
+<body><div class="wrap">
+<header class="hero">
+<div class="eyebrow">неформальная социально-репутационная модель</div>
+<h1>ПОЗОР</h1>
+<p class="lead">Сводное описание феномена, возникшего вокруг ОБД: определение, механизм, основные события, стадии, архивная фаза и критерии, позволяющие отличить Позор от обычной дурной репутации.</p>
+<div class="definition"><strong>Финальное определение.</strong><br><b>Позор</b> — это самоподдерживающийся репутационно-социальный процесс, при котором накопленная негативная репутация человека перестаёт быть просто оценкой его прошлых поступков и сама становится причинным фактором новых событий: формирует ожидания окружающих, влияет на интерпретацию новых поступков и решения о человеке, провоцирует конфликты и ответные реакции, а возникшие вследствие этого новые эпизоды снова подтверждают и усиливают исходную репутацию.</div>
+<nav><a href="#criterion">Критерий</a><a href="#loop">Петля</a><a href="#chronology">Хронология</a><a href="#events">События</a><a href="#aug23">Август 2023</a><a href="#archive">Архив</a><a href="#ending">Остановка</a><a href="#english">English</a></nav>
+</header>
+
+<section id="criterion"><h2>1. Главный критерий</h2>
+<div class="kicker">Плохая репутация предсказывает новые эпизоды. Позор сам помогает их производить.</div>
+<p>Если человек много раз сделал глупость и поэтому считается человеком, который часто делает глупости, это ещё не Позор. Это обычная плохая репутация.</p>
+<p>Позор начинается тогда, когда репутация <b>вступает в причинность настоящего</b>: люди заранее ждут определённого поведения, иначе взаимодействуют с человеком, новые поступки трактуются через старый образ, а человек реагирует уже не только на конкретную претензию, но и на собственную репутацию.</p>
+<table><tr><th>Явление</th><th>Суть</th></tr><tr><td><b>Кринж</b></td><td>Отдельный нелепый или неприятный эпизод.</td></tr><tr><td><b>Плохая репутация</b></td><td>Коллективная память о повторяющихся эпизодах.</td></tr><tr><td><b>Канон / фольклор</b></td><td>Старые истории превращаются в устойчивые мемы, ярлыки и сокращённые сюжеты.</td></tr><tr><td><b>Позор</b></td><td>Репутация и канон начинают менять новые взаимодействия и помогать создавать новые эпизоды.</td></tr></table>
+</section>
+
+<section id="loop"><h2>2. Репутационная петля</h2>
+<div class="loop"><div class="node">Поступок / срыв / провал</div><div class="arrow">→</div><div class="node">Публичная реакция и память</div><div class="arrow">→</div><div class="node">Устойчивая репутация</div></div>
+<div class="loop"><div class="node">Новое событие читается через старый образ</div><div class="arrow">→</div><div class="node">Возникает метаконфликт о репутации</div><div class="arrow">→</div><div class="node">Новый материал усиливает канон</div></div>
+<p class="note"><b>Причинность двусторонняя:</b> ОБД производит Позор, а уже существующий Позор производит новые условия конфликтов вокруг ОБД.</p>
+</section>
+
+<section><h2>3. Стадии</h2><div class="grid">
+<div class="card"><span class="tag">I</span><h3>Протопозор</h3><p>Накапливаются эпизоды, мемы и дурная репутация, но система ещё не стала самостоятельной.</p></div>
+<div class="card"><span class="tag core">II</span><h3>Активный Позор</h3><p>Репутация уже влияет на ожидания, решения и трактовку новых событий.</p></div>
+<div class="card"><span class="tag meta">III</span><h3>Мета-Позор</h3><p>Спор идёт уже не только о конкретном событии, но и о том, почему человеку не доверяют и почему вспоминают прошлое.</p></div>
+<div class="card"><span class="tag archive">IV</span><h3>Автономный / архивный Позор</h3><p>Фольклор, логи и архивы продолжают жить даже при отсутствии самого человека.</p></div>
+</div></section>
+
+<section id="chronology"><h2>4. Основная хронология</h2><div class="timeline">
+<div class="event"><div class="date">2022 — март 2023</div><h3>Протопозор</h3><p>Ранние ОБУДУ-шутки, конфликты, неудачные ВПИ, блокировки/разблокировки и накопление узнаваемых паттернов.</p></div>
+<div class="event"><div class="date">3 апреля 2023</div><h3>Условный «год ноль»</h3><p>Публичная истерика и институциональное последствие — потеря модерки. Негативный образ получает публичную фиксацию.</p></div>
+<div class="event"><div class="date">22 августа 2023</div><h3>Провал Лайт-ВПИ</h3><p>Неудачное проведение, спорные решения и организация вызывают недовольство и уход части участников. ОБД публично срывается; именно эта сцена запоминается группе и входит в канон.</p></div>
+<div class="event"><div class="date">22–23 августа 2023</div><h3>Пост-ВПИ и краш БКРП</h3><p>После ночного краша быстро возникает идея отдельного пространства для проектов. Это усиливает ощущение крупного рецидива.</p></div>
+<div class="event"><div class="date">конец ноября 2023 — апрель 2024</div><h3>Классический пик</h3><p>Локальные РП- и ВПИ-конфликты регулярно превращаются в споры о дружбе, лояльности, обязанностях, блокировках и репутации ОБД.</p></div>
+<div class="event"><div class="date">март 2024</div><h3>ВПИ-слот и репутационная причинность</h3><p>Спор о слоте и проекте смешивается с отношением к автору. Репутация уже влияет на оценку ещё не реализованного ВПИ.</p></div>
+<div class="event"><div class="date">апрель — июль 2024</div><h3>Неполная ремиссия</h3><p>Интенсивность падает, но повторяемые бытовые и организационные мотивы продолжают подпитывать ожидания.</p></div>
+<div class="event"><div class="date">август 2024</div><h3>Мегарецидив</h3><p>ОБД спорит уже с самой системой своей репутации: появляется рамка «более года гнобите человека», требования переоценки и взаимных извинений.</p></div>
+<div class="event"><div class="date">конец августа 2024 — конец июня 2026</div><h3>Латентная фаза</h3><p>БКРП почти неактивен. Позор не исчезает, а лишается среды для постоянного воспроизводства.</p></div>
+<div class="event"><div class="date">лето 2026</div><h3>Реактивация</h3><p>С оживлением сообщества старый образ быстро возвращается и начинает определять трактовку новых историй.</p></div>
+<div class="event"><div class="date">9–14 августа 2026</div><h3>Финальный активный рецидив</h3><p>Новая волна конфликтов, уход 12 августа и продолжение обсуждения после ухода. Сам ОБД формулирует теории «общего флёра», репутационной иерархии и борьбы за внимание.</p></div>
+<div class="event"><div class="date">после августа 2026</div><h3>Архивно-публичная фаза</h3><p>Старые логи, скриншоты и приватные диалоги вводятся в оборот. Позор становится не только фольклором, но и историографией.</p></div>
+</div></section>
+
+<section id="events"><h2>5. Что считать событием Позора</h2>
+<p>Событие Позора лучше понимать не как одну реплику, а как <b>ограниченный социальный эпизод</b>, внутри которого репутационная петля получает новый оборот.</p>
+<div class="grid">
+<div class="card"><span class="tag core">Событие</span><h3>Провал Лайт-ВПИ</h3><p>Само плохо проведённое ВПИ — первичное событие. Публичная тирада — кульминация, сделавшая провал ярким и коллективно запоминающимся.</p></div>
+<div class="card"><span class="tag meta">Мета-событие</span><h3>Война с репутацией</h3><p>Когда спор начинает звучать как «вы ко мне предвзяты», «я изменился», «меня гнобят», система уже обсуждает саму себя.</p></div>
+<div class="card"><span class="tag archive">Архивный материал</span><h3>ЛС, найденная позднее</h3><p>Если переписку никто не видел тогда, она не могла тогда менять публичную репутацию. Она становится частью Позора только после публикации.</p></div>
+<div class="card"><span class="tag">Не автоматически событие</span><h3>Просто кринж или плохой тейк</h3><p>Отдельная нелепость не становится Позором, пока не входит в причинную репутационную петлю.</p></div>
+</div></section>
+
+<section id="aug23"><h2>6. Август 2023 как образцовый кейс</h2>
+<div class="quote">Плохо проведённое Лайт-ВПИ → участники недовольны и уходят → ОБД публично срывается → сцена запоминается → образ проблемного ведущего усиливается → последующие проекты частично оцениваются через уже накопленную репутацию.</div>
+<p>Позднее найденный разговор в ЛС показывает, что сам ОБД уже тогда воспринимал критику через образ «ОБД» и ожидал предвзятого отношения. Но поскольку разговор был приватным и прикреплён к материалам Позора только в 2026 году, это <b>архивный документ о старой главе</b>, а не часть публичной причинности августа 2023.</p>
+</section>
+
+<section><h2>7. Пограничные и ассимилированные сюжеты</h2>
+<details open><summary>Алхимики</summary><p>В исходном виде — внешняя история о неприятном опыте ОБД, а не событие Позора. Позднее она становится каноническим свидетельством и используется для сравнения с нынешними конфликтами.</p></details>
+<details><summary>Семья ОБД</summary><p>Семейные ограничения становятся повторяемой причинной инфраструктурой и входят в ожидания окружающих.</p></details>
+<details><summary>Собаки</summary><p>Вторичный «собачий субканон»: реальные бытовые помехи превращаются в заранее ожидаемое объяснение новых срывов. Собаки не породили Позор, но Позор ассимилировал собак.</p></details>
+<details><summary>Политические и исторические тейки</summary><p>Сами по себе даже очень спорные рассуждения не являются Позором. Они становятся позорогенными лишь при переходе к знакомой мета-петле.</p></details>
+</section>
+
+<section id="archive"><h2>8. Архивный Позор</h2>
+<p>В поздней стадии старые логи, скриншоты и приватные переписки начали возвращать в оборот забытые детали. Историческое событие не меняется, но его понимание может измениться существенно.</p>
+<div class="kicker">Раньше Позор был фольклором. Теперь он ещё и историография.</div>
+</section>
+
+<section><h2>9. Насколько термин универсален</h2>
+<p><b>«Позор» с большой буквы</b> — собственное имя конкретного феномена вокруг ОБД. Но механизм обобщаем: другой человек тоже может попасть в самоподдерживающуюся репутационную петлю. Поэтому полезно различать <b>Позор ОБД</b> как исторический кейс и <b>позороподобный процесс</b> как общий тип динамики.</p>
+</section>
+
+<section id="ending"><h2>10. Можно ли было остановить активную генерацию</h2>
+<p>Да. Для этого не требовалось мгновенно восстановить репутацию — требовалось перестать производить новый материал: не воевать за немедленную реабилитацию, заканчивать конфликты, не превращать частную претензию в системный спор и доказывать изменение месяцами скучно нормального поведения.</p>
+<div class="quote">Чтобы победить Позор, ОБД не нужно было доказать, что Позор неправ. Ему нужно было перестать давать Позору новые главы.</div>
+</section>
+
+<section id="english"><h2>11. Английский перевод</h2>
+<p>Наиболее удачное собственное имя — <b>The Disgrace</b>. Оно лучше <i>shame</i> или <i>embarrassment</i>, потому что речь не о внутреннем чувстве стыда, а о внешнем социально-репутационном процессе.</p>
+<table><tr><th>Русский термин</th><th>Английский вариант</th></tr><tr><td>Позор</td><td><b>The Disgrace</b></td></tr><tr><td>протопозор</td><td>Proto-Disgrace</td></tr><tr><td>событие Позора</td><td>Disgrace event</td></tr><tr><td>позорогенный</td><td>disgrace-generating / disgrace-producing</td></tr><tr><td>активный Позор</td><td>Active Disgrace</td></tr><tr><td>автономный Позор</td><td>Autonomous Disgrace</td></tr><tr><td>канон Позора</td><td>The Disgrace canon</td></tr><tr><td>репутационная петля</td><td>self-reinforcing reputational loop</td></tr></table>
+<div class="quote">A bad reputation predicts future incidents. <b>The Disgrace helps produce them.</b></div>
+</section>
+
+<section><h2>12. Итоговая формула</h2>
+<div class="kicker">Репутация — память о поведении. Позор — коллективная память, которая вступает в причинность настоящего.</div>
+<p>Позор — не архив ошибок и не счётчик кринжа, а динамическая система. Он достигает зрелости тогда, когда человек взаимодействует уже не только с другими людьми, но и со своим общественным образом, а группа — не только с человеком, но и с накопленным каноном о нём.</p>
+<div class="quote">ОБД может покинуть Позор раньше, чем Позор покинет ОБД.</div>
+</section>
+
+<section><h2>Примечание о методе</h2><p class="small">Это не психологический диагноз и не попытка установить скрытые мотивы участников. Модель построена на наблюдаемом поведении, последовательности событий, реакции группы и различении того, что было публично известно в момент события, и того, что стало известно лишь позднее из архивов.</p></section>
+<footer>Сводная версия по материалам реконструкции феномена «Позор».</footer>
+</div></body></html>
