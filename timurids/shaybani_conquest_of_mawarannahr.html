@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Шейбани-хан и захват Мавераннахра</title>
+<style>
+:root{
+  --bg:#efe8dc;--paper:#fffaf2;--ink:#26221e;--muted:#6d655b;
+  --red:#7b302f;--green:#365d54;--gold:#a0824e;--line:#d9ccb8;--soft:#f1e8da;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(180deg,#e8dfd1,var(--bg));color:var(--ink);
+     font:17px/1.67 Georgia,"Times New Roman",serif}
+a{color:var(--green)}
+.wrap{max-width:1120px;margin:auto;padding:0 24px}
+header{padding:58px 0 42px;background:rgba(255,250,242,.9);border-bottom:1px solid var(--line)}
+.kicker{color:var(--red);font-weight:bold;letter-spacing:.13em;text-transform:uppercase;font-size:.78rem}
+h1{font-size:clamp(2.4rem,6vw,4.6rem);line-height:1.04;margin:.3rem 0 1rem}
+.subtitle{font-size:1.16rem;color:var(--muted);max-width:900px}
+.meta{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}
+.chip{padding:6px 10px;border:1px solid var(--line);border-radius:999px;background:#fffdf8;color:var(--muted);font-size:.84rem}
+main{padding:34px 0 70px}
+.layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:32px}
+nav{position:sticky;top:18px;align-self:start;background:rgba(255,250,242,.95);border:1px solid var(--line);
+    border-radius:15px;padding:17px}
+nav strong{display:block;color:var(--red);margin-bottom:8px}
+nav a{display:block;text-decoration:none;color:var(--ink);padding:6px 8px;border-radius:8px;font-size:.92rem}
+nav a:hover{background:var(--soft)}
+article{background:rgba(255,250,242,.95);border:1px solid var(--line);border-radius:18px;padding:clamp(23px,4vw,46px);
+        box-shadow:0 12px 36px rgba(45,35,25,.06)}
+h2{font-size:2rem;line-height:1.2;margin:2.3rem 0 .8rem;color:#3b2c25}
+h2:first-child{margin-top:0}
+h3{font-size:1.32rem;color:var(--red);margin:1.65rem 0 .5rem}
+p{margin:.7rem 0}
+.lead{font-size:1.12rem;border-left:4px solid var(--gold);padding-left:16px;color:#443d35}
+.callout{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:18px 0}
+.callout strong{color:var(--red)}
+.timeline{display:grid;gap:9px;margin:18px 0}
+.ev{display:grid;grid-template-columns:110px 1fr;gap:12px;background:#fbf5eb;border-left:4px solid var(--green);
+    padding:11px 13px;border-radius:0 10px 10px 0}
+.yr{font-weight:bold;color:var(--red)}
+table{width:100%;border-collapse:collapse;margin:18px 0 25px;font-size:.94rem}
+th,td{border:1px solid var(--line);padding:9px 11px;vertical-align:top}
+th{background:var(--soft);text-align:left}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:18px 0}
+.card{background:#fffdf8;border:1px solid var(--line);border-radius:12px;padding:14px}
+.card h4{margin:.1rem 0 .35rem;color:var(--green)}
+.small{font-size:.9rem;color:var(--muted)}
+.back{float:right;font-size:.83rem}
+@media(max-width:860px){.layout{grid-template-columns:1fr}nav{position:relative;top:auto}.grid2{grid-template-columns:1fr}.ev{grid-template-columns:85px 1fr}}
+
+/* Reading and navigation refinements, 21 October 2026. */
+body{overflow-wrap:break-word}main,article,.paper{min-width:0}h1{overflow-wrap:break-word}
+.cycle-bar{max-width:1160px;margin:0 auto;padding:15px 24px;display:flex;flex-wrap:wrap;gap:10px 24px;font:14px/1.5 system-ui,sans-serif;color:#51483e}
+.cycle-bar a{color:#315b50}.revision-meta{margin:0 0 1.5rem;font:.85rem/1.6 system-ui,sans-serif;color:#675e52}
+.revision-notes{margin-top:2.6rem;padding-top:1rem;border-top:1px solid #d8cab5}.revision-notes li{margin:.65rem 0}.revision-notes summary{cursor:pointer;font-weight:bold;padding:12px 0}.revision-notes a{overflow-wrap:anywhere}
+.table-scroll{overflow-x:auto;max-width:100%}caption{text-align:left;font-size:.9rem;padding:8px 0}table{min-width:520px}
+nav{max-height:calc(100vh - 36px);overflow-y:auto}nav a{line-height:1.4}.inline-toc{position:static;max-height:none;margin-bottom:28px;background:#f5eddf;padding:18px;border:1px solid #d8cab5;border-radius:12px}.inline-toc a{display:block;padding:5px 0}
+@media(max-width:880px){nav{position:static;max-height:none}.cycle-bar{padding:14px 18px}h1{font-size:clamp(2rem,9vw,3.6rem)}.paper{padding:22px 17px}.grid2,.split{grid-template-columns:1fr}}
+@media print{body{background:#fff;color:#000}.cycle-bar,nav,.inline-toc,.toplink,.back{display:none!important}.layout,.shell{display:block!important}article,.paper{padding:0;border:0;box-shadow:none}h2,h3{break-after:avoid}table{min-width:0}a{color:inherit}.revision-notes details{display:none}}
+</style>
+</head>
+<body>
+<header id="top">
+<div class="wrap">
+  <div class="kicker">Переход от Тимуридов к Бабуру</div>
+  <h1>Шейбани-хан и захват Мавераннахра</h1>
+  <p class="subtitle">
+    Краткая, но цельная история того, откуда взялся Мухаммад Шейбани, почему Тимуриды
+    Мавераннахра оказались уязвимы и как в 1499–1504 годах узбекские силы вытеснили
+    Бабура из Самарканда и Ферганы.
+  </p>
+  <div class="meta">
+    <span class="chip">ок. 1480-х — 1504</span>
+    <span class="chip">Бухара · Самарканд · Ташкент · Фергана</span>
+    <span class="chip">Мухаммад Шейбани · Бабур</span>
+  </div>
+</div>
+</header><div class="cycle-bar" aria-label="Навигация по циклу"><a href="timurids_mughals_contents.html">Все главы и перечень исправлений</a><a href="timurids_1447_1506_with_shaybani_transition.html">← Предыдущая глава</a><a href="babur_1494_1504_ferghana_samarkand.html">Следующая глава →</a></div>
+
+<main>
+<div class="wrap layout">
+<nav><strong>Содержание</strong><a href="#heading-1">1. Откуда вообще берётся Мухаммад Шейбани</a><a href="#heading-2">2. Почему Мавераннахр оказался настолько уязвим</a><a href="#heading-3">3. 1480–1490-е: как Шейбани набирает силу</a><a href="#heading-4">4. 1499–1500: сначала Бухара</a><a href="#heading-5">5. 1500–1501: падение Самарканда</a><a href="#heading-6">6. 1501: Сарипуль и перелом в судьбе Бабура</a><a href="#heading-7">7. 1502–1503: Шейбани добирает Ташкент и Фергану</a><a href="#heading-8">8. Что изменилось к 1504 году</a><a href="#heading-9">9. Переход к Бабуру</a><a href="#heading-10">10. Хронология</a><a href="#heading-11">Примечания к редакции</a></nav>
+
+<article>
+<section id="origin"><a class="back" href="#top">↑ наверх</a>
+<h2 id="heading-1">1. Откуда вообще берётся Мухаммад Шейбани</h2>
+<p class="lead">
+Для нашей истории не нужно глубоко уходить в историю всей династии Шейбанидов. Достаточно понимать,
+что Мухаммад Шейбани происходил из джучидской линии Шибана и был внуком Абулхайр-хана —
+правителя большого объединения кочевых узбеков Дешт-и-Кыпчака.
+</p>
+<p>
+После смерти Абулхайра его политическая система распалась. Молодой Шейбани не получил
+готовую сильную державу. Ему пришлось заново собирать сторонников, служить чужим правителям,
+искать безопасные стоянки и постепенно превращать собственную узбекскую конницу в самостоятельную силу.
+</p>
+<div class="callout"><strong>Важно:</strong> Шейбани не появляется внезапно в 1500 году. К моменту
+захвата Мавераннахра он уже много лет участвовал в политике региона и хорошо знал слабости Тимуридов.</div>
+</section>
+
+<section id="context"><a class="back" href="#top">↑ наверх</a>
+<h2 id="heading-2">2. Почему Мавераннахр оказался настолько уязвим</h2>
+<p>После смерти Абу Саида в 1469 году его держава распалась. К концу XV века Самарканд, Фергана и Хисар находились у соперничающих Тимуридов. Ташкент, однако, был центром Султан Махмуд-хана из чагатайской династии, а не очередным тимуридским уделом.</p>
+<p>
+Эта раздробленность особенно хорошо видна на примере Бабура. В 1494 году он получил Фергану,
+в 1497 году взял Самарканд, но пока удерживал его, потерял Фергану. Вскоре он лишился и Самарканда.
+Для Шейбани это был идеальный момент: регион был богатым, но политически раздробленным.
+</p>
+</section>
+
+<section id="rise"><a class="back" href="#top">↑ наверх</a>
+<h2 id="heading-3">3. 1480–1490-е: как Шейбани набирает силу</h2>
+<p>
+В молодости Шейбани действовал как военный предприниматель. Он служил разным правителям,
+сотрудничал с тимуридскими и чагатайскими князьями и постепенно собирал вокруг себя узбекские силы.
+Некоторое время он находился в Бухаре, затем получил опору в районе Туркестана и Ташкента.
+</p>
+<p>
+Особенно важной стала поддержка западного чагатайского хана Султан Махмуда. Благодаря этому
+Шейбани получил возможность действовать не просто как степной набеговый вождь, а как игрок
+внутри политической системы Мавераннахра.
+</p>
+<div class="grid2">
+<div class="card"><h4>Его преимущество</h4><p>Мобильная конница, собственная клиентела и отсутствие привязки к одному городу.</p></div>
+<div class="card"><h4>Слабость Тимуридов</h4><p>Постоянные войны между родственниками и приглашение внешних сил в собственные конфликты.</p></div>
+</div>
+</section>
+
+<section id="bukhara"><a class="back" href="#top">↑ наверх</a>
+<h2 id="heading-4">4. 1499–1500: сначала Бухара</h2>
+<p>
+В 1499 году Шейбани снова двинулся в сторону Самарканда. Когда бухарские силы пошли на помощь городу,
+он перехватил их у Дабусии и разбил. После этого удар был перенесён на <b>Бухару</b>.
+</p>
+<p>
+Бухара выдержала короткую осаду и капитулировала. Это был важнейший перелом:
+Шейбани получил богатый оседлый центр, налоговую базу, ремесло и один из главных
+религиозных городов региона. Теперь его сила перестала быть чисто кочевой.
+</p>
+</section>
+
+<section id="samarkand"><a class="back" href="#top">↑ наверх</a>
+<h2 id="heading-5">5. 1500–1501: падение Самарканда</h2>
+<p>
+После Бухары следующей целью был <b>Самарканд</b> — главный символ тимуридского наследия.
+Шейбани сумел овладеть городом около 1500 года.
+</p>
+<p>
+Но Бабур не смирился. Для него Самарканд был не просто богатым городом, а столицей Тимура
+и доказательством права на наследство династии. Он неожиданно вернул город и на короткое время
+снова стал его хозяином.
+</p>
+</section>
+
+<section id="saripul"><a class="back" href="#top">↑ наверх</a>
+<h2 id="heading-6">6. 1501: Сарипуль и перелом в судьбе Бабура</h2>
+<p>
+Весной 1501 года Бабур вышел навстречу Шейбани и был разбит в <b>битве при Сарипуле</b>
+неподалёку от Самарканда. После поражения он ещё некоторое время удерживал город,
+но Шейбани блокировал его и перерезал снабжение.
+</p>
+<p>
+В Самарканде начался голод. В конце концов Бабур был вынужден покинуть город.
+Эта попытка удержать Самарканд закончилась неудачей; Бабур вернётся в город ещё раз в 1511 году.
+</p>
+<div class="callout"><strong>Историческое значение:</strong> поражение при Сарипуле — один из ключевых
+моментов будущей истории Моголов. Именно после него биография Бабура всё больше превращается
+из борьбы за Самарканд в поиск новой территориальной базы.</div>
+</section>
+
+<section id="east"><a class="back" href="#top">↑ наверх</a>
+<h2 id="heading-7">7. 1502–1503: Шейбани добирает Ташкент и Фергану</h2>
+<p>
+Закрепившись в Бухаре и Самарканде, Шейбани ударил по тем силам, которые прежде помогали ему.
+В 1502–1503 годах он расширил власть на Туркестан, Ташкент и значительную часть Ферганской долины.
+</p>
+<p>
+В 1503 году был разгромлен союз чагатайских ханов Султан Махмуда и Ахмад-хана,
+к которому примыкал и Бабур. После этого Ташкент и большая часть Ферганы перешли под контроль узбеков.
+</p>
+<p>Завоевание Ферганы не завершилось одним сражением: ликвидация власти Ахмада Танбала в Андижане и подчинение оставшихся центров продолжались в 1504 году.</p>
+<p>
+Именно здесь окончательно рушится старая политическая карта Мавераннахра:
+потомки Абу Саида теряют один ключевой центр за другим.
+</p>
+</section>
+
+<section id="result"><a class="back" href="#top">↑ наверх</a>
+<h2 id="heading-8">8. Что изменилось к 1504 году</h2>
+<div class="table-scroll"><table>
+<tr><th>Регион</th><th>До Шейбани</th><th>К 1504 году</th></tr>
+<tr><td>Бухара</td><td>Тимуридский центр</td><td>У Шейбани</td></tr>
+<tr><td>Самарканд</td><td>Главный символ Тимуридов</td><td>У Шейбани</td></tr>
+<tr><td>Ташкент</td><td>Сфера чагатайских ханов и Тимуридов</td><td>У Шейбани</td></tr>
+<tr><td>Фергана</td><td>Владение Бабура и других Тимуридов</td><td>В основном под узбекским контролем</td></tr>
+<tr><td>Политическая система</td><td>Несколько враждующих княжеств</td><td>Узбекская держава с династическими уделами</td></tr>
+</table></div>
+<p>Шейбани вытеснил Тимуридов из главных центров Мавераннахра, но не отменил удельный принцип. Земли распределялись между членами шибанидского рода; объединение держалось на верховенстве хана и согласовании интересов его родственников.</p>
+</section>
+
+<section id="babur"><a class="back" href="#top">↑ наверх</a>
+<h2 id="heading-9">9. Переход к Бабуру</h2>
+<p>
+К 1504 году Бабур оказался почти без устойчивого владения. Несколько лет он переходил
+от одной временной базы к другой, пока не пересёк Гиндукуш и не захватил <b>Кабул</b>.
+</p>
+<p>
+Вот здесь заканчивается его история как одного из многочисленных Тимуридов Мавераннахра
+и начинается история собственного Кабульского государства Бабура.
+</p>
+<p>
+Шейбани после этого продолжит экспансию — возьмёт Хорезм, Балх и в 1507 году Герат, —
+но для нашей линии рассказа это уже фон. Главный сюжет дальше — что делает Бабур,
+получив новую базу в Кабуле.
+</p>
+</section>
+
+<section id="timeline"><a class="back" href="#top">↑ наверх</a>
+<h2 id="heading-10">10. Хронология</h2>
+<div class="timeline">
+<div class="ev"><div class="yr">1480–90-е</div><div>Шейбани служит разным правителям, собирает собственную узбекскую силу.</div></div>
+<div class="ev"><div class="yr">1494</div><div>Бабур наследует Фергану.</div></div>
+<div class="ev"><div class="yr">1497</div><div>Бабур впервые берёт Самарканд, но вскоре теряет и его, и Фергану.</div></div>
+<div class="ev"><div class="yr">1499–1500</div><div>Шейбани разбивает бухарские силы и захватывает Бухару.</div></div>
+<div class="ev"><div class="yr">1500</div><div>Шейбани занимает Самарканд.</div></div>
+<div class="ev"><div class="yr">1500–1501</div><div>Бабур ненадолго возвращает Самарканд.</div></div>
+<div class="ev"><div class="yr">1501</div><div>Поражение Бабура при Сарипуле; Самарканд снова у Шейбани.</div></div>
+<div class="ev"><div class="yr">1502–1503</div><div>Узбекское наступление на Туркестан, Ташкент и Фергану.</div></div>
+<div class="ev"><div class="yr">1503</div><div>Разгром чагатайско-тимуридского союза; Бабур теряет последние серьёзные позиции в регионе.</div></div>
+<div class="ev"><div class="yr">1504</div><div>Шейбани контролирует основные центры Мавераннахра; Бабур уходит через Гиндукуш и берёт Кабул.</div></div>
+</div>
+<p class="small">Этот файл сознательно не превращён в общую историю Шейбанидов. Его задача — объяснить переход от поздних Тимуридов к кабульскому этапу жизни Бабура.</p>
+</section>
+
+<section class="revision-notes" id="revision-notes"><h2 id="heading-11">Примечания к редакции</h2><p class="revision-meta">Редакция от 21 октября 2026 года. Ниже — источники для уточнений и перечень изменений.</p><ul><li><a href="https://www.iranicaonline.org/articles/central-asia-vi/" target="_blank" rel="noopener noreferrer">Iranica: Central Asia VI</a>. Суверенитет шибанидского рода и система уделов.</li><li><a href="https://www.gutenberg.org/files/44608/44608-h/44608-h.htm" target="_blank" rel="noopener noreferrer">Бабур-наме, перевод А. С. Беверидж</a>. События 1499–1504 годов; западные чагатайские ханы и Ташкент.</li></ul><details><summary>Что изменено в этом файле</summary><ul><li>Ташкент отделён от собственно тимуридских владений.</li><li>Уточнено устройство государства Шейбани.</li><li>Убрано ошибочное утверждение об уничтожении удельной системы.</li><li>Указано, что Самарканд был потерян не навсегда в 1501 году.</li><li>Завоевание Ферганы согласовано с главой о Бабуре: процесс продолжался в 1504 году.</li></ul></details></section></article>
+</div>
+</main><div class="cycle-bar" aria-label="Навигация по циклу"><a href="timurids_mughals_contents.html">Все главы и перечень исправлений</a><a href="timurids_1447_1506_with_shaybani_transition.html">← Предыдущая глава</a><a href="babur_1494_1504_ferghana_samarkand.html">Следующая глава →</a></div>
+</body>
+</html>
