@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Тимуриды: от смерти Шахруха до Хусейна Байкары (1447–1506)</title>
+<style>
+:root{--bg:#f5f0e6;--paper:#fffaf1;--ink:#25221e;--muted:#6f685e;--accent:#7a2f2f;--accent2:#355f55;--line:#d8cbb7;--soft:#eee5d6;--gold:#a7864d}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;color:var(--ink);background:linear-gradient(180deg,#eee6d7,var(--bg));line-height:1.65}
+a{color:var(--accent2)} .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+header{padding:64px 0 42px;border-bottom:1px solid var(--line);background:rgba(255,250,241,.8)}
+.kicker{color:var(--accent);letter-spacing:.12em;text-transform:uppercase;font-size:.78rem;font-weight:bold}
+h1{font-size:clamp(2.2rem,6vw,4.7rem);line-height:1.03;margin:.35rem 0 1rem;max-width:980px}
+.subtitle{max-width:900px;font-size:1.17rem;color:var(--muted);margin:0}
+.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.chip{border:1px solid var(--line);background:var(--paper);padding:7px 11px;border-radius:999px;font-size:.86rem;color:var(--muted)}
+main{padding:34px 0 72px}.layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:34px}
+nav{position:sticky;top:18px;align-self:start;background:rgba(255,250,241,.95);border:1px solid var(--line);border-radius:16px;padding:18px}
+nav strong{display:block;margin-bottom:10px;color:var(--accent)} nav a{display:block;padding:7px 8px;text-decoration:none;border-radius:8px;color:var(--ink);font-size:.93rem}nav a:hover{background:var(--soft)}
+article{background:rgba(255,250,241,.9);border:1px solid var(--line);border-radius:18px;padding:clamp(22px,4vw,46px);box-shadow:0 10px 35px rgba(55,40,25,.06)}
+h2{margin:2.2rem 0 .85rem;padding-top:.25rem;font-size:2rem;line-height:1.2;color:#3a2b25}h2:first-child{margin-top:0}
+h3{margin:1.8rem 0 .6rem;font-size:1.35rem;color:var(--accent)} p{margin:.75rem 0}
+.lead{font-size:1.12rem;border-left:4px solid var(--gold);padding-left:16px;color:#453d35}
+.callout{margin:20px 0;padding:16px 18px;border-radius:12px;background:var(--soft);border:1px solid var(--line)}.callout strong{color:var(--accent)}
+.timeline{margin:22px 0 10px;display:grid;gap:10px}.event{display:grid;grid-template-columns:104px 1fr;gap:14px;align-items:start;padding:12px 14px;border-left:4px solid var(--accent2);background:#fbf6ed;border-radius:0 10px 10px 0}.year{font-weight:bold;color:var(--accent)}
+table{width:100%;border-collapse:collapse;margin:18px 0 26px;font-size:.94rem}th,td{border:1px solid var(--line);padding:10px 12px;vertical-align:top}th{background:var(--soft);text-align:left}
+.tree{background:#1f2624;color:#f4eee4;padding:18px 20px;border-radius:14px;overflow:auto;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.9rem;line-height:1.55}
+.mini-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:18px 0}.card{border:1px solid var(--line);border-radius:12px;padding:15px;background:#fffdf8}.card h4{margin:0 0 5px;color:var(--accent2);font-size:1.06rem}
+.badge{display:inline-block;font-size:.76rem;padding:3px 7px;background:#e7efe9;color:#294a43;border-radius:999px;margin-bottom:7px}.footnote{color:var(--muted);font-size:.9rem}.toplink{font-size:.85rem;float:right}
+@media(max-width:880px){.layout{grid-template-columns:1fr}nav{position:relative;top:auto}.mini-grid{grid-template-columns:1fr}.event{grid-template-columns:80px 1fr}}
+
+/* Reading and navigation refinements, 21 October 2026. */
+body{overflow-wrap:break-word}main,article,.paper{min-width:0}h1{overflow-wrap:break-word}
+.cycle-bar{max-width:1160px;margin:0 auto;padding:15px 24px;display:flex;flex-wrap:wrap;gap:10px 24px;font:14px/1.5 system-ui,sans-serif;color:#51483e}
+.cycle-bar a{color:#315b50}.revision-meta{margin:0 0 1.5rem;font:.85rem/1.6 system-ui,sans-serif;color:#675e52}
+.revision-notes{margin-top:2.6rem;padding-top:1rem;border-top:1px solid #d8cab5}.revision-notes li{margin:.65rem 0}.revision-notes summary{cursor:pointer;font-weight:bold;padding:12px 0}.revision-notes a{overflow-wrap:anywhere}
+.table-scroll{overflow-x:auto;max-width:100%}caption{text-align:left;font-size:.9rem;padding:8px 0}table{min-width:520px}
+nav{max-height:calc(100vh - 36px);overflow-y:auto}nav a{line-height:1.4}.inline-toc{position:static;max-height:none;margin-bottom:28px;background:#f5eddf;padding:18px;border:1px solid #d8cab5;border-radius:12px}.inline-toc a{display:block;padding:5px 0}
+@media(max-width:880px){nav{position:static;max-height:none}.cycle-bar{padding:14px 18px}h1{font-size:clamp(2rem,9vw,3.6rem)}.paper{padding:22px 17px}.grid2,.split{grid-template-columns:1fr}}
+@media print{body{background:#fff;color:#000}.cycle-bar,nav,.inline-toc,.toplink,.back{display:none!important}.layout,.shell{display:block!important}article,.paper{padding:0;border:0;box-shadow:none}h2,h3{break-after:avoid}table{min-width:0}a{color:inherit}.revision-notes details{display:none}}
+</style>
+</head>
+<body>
+<header id="top"><div class="wrap">
+<div class="kicker">Исторический конспект · Тимуриды</div>
+<h1>От смерти Шахруха до Хусейна Байкары</h1>
+<p class="subtitle">Связная история распада державы Шахруха, борьбы его потомков, возвышения Абу Саида и формирования позднего Гератского государства Хусейна Байкары — с хронологией, территориями и генеалогией.</p>
+<div class="meta"><span class="chip">1447–1506</span><span class="chip">Герат · Самарканд · Мавераннахр · Хорасан</span><span class="chip">Шахрухиды · Мираншахиды · линия Умар-Шейха</span></div>
+</div></header><div class="cycle-bar" aria-label="Навигация по циклу"><a href="timurids_mughals_contents.html">Все главы и перечень исправлений</a><a href="shaybani_conquest_of_mawarannahr.html">Следующая глава →</a></div>
+
+<main><div class="wrap layout">
+<nav><strong>Содержание</strong><a href="#heading-1">1. Что осталось после Шахруха</a><a href="#heading-2">2. Кризис престолонаследия: 1447–1451</a><a href="#heading-3">3. Борьба за Герат и остатки шахрухидской линии</a><a href="#heading-4">4. Абу Саид: почти восстановленная восточная держава Тимуридов</a><a href="#heading-5">5. 1469 год: гибель Абу Саида и новый распад</a><a href="#heading-6">6. Хусейн Байкара: последний великий Тимурид Герата</a><a href="#heading-7">7. Что контролировал Хусейн Байкара</a><a href="#heading-8">8. Герат при Хусейне Байкаре: культурный пик</a><a href="#heading-9">9. Почему Тимуридские государства снова и снова распадались</a><a href="#heading-10">10. Хронология: 1447–1506</a><a href="#heading-11">11. Упрощённая генеалогическая схема</a><a href="#heading-12">12. Основные справочные источники</a><a href="#heading-13">Примечания к редакции</a></nav>
+
+<article>
+<section id="frame"><a class="toplink" href="#top">↑ наверх</a><h2 id="heading-1">1. Что осталось после Шахруха</h2>
+<p class="lead">К моменту смерти Шахруха в 1447 году Тимуридская держава всё ещё была огромной, но политически это была династическая система уделов. Пока жил Шахрух, её удерживал личный авторитет верховного государя. После его смерти каждый крупный Тимурид уже имел землю, двор, воинов, доходы и собственные основания претендовать на верховную власть.</p>
+<p>Шахрух, младший сын Тимура, закрепился в Герате ещё при жизни отца, а после 1405–1409 годов стал верховным правителем большей части державы. При нём Герат фактически превратился в главный политический и культурный центр Тимуридского мира. Его правление было значительно менее «походным», чем у Тимура: вместо непрерывных гигантских завоеваний — стабилизация, восстановление торговли, ирригации, городов и двора.</p>
+<p>К 1440-м годам важнейшие части государства находились в руках его близких родственников. Самарканд и Мавераннахр связывались прежде всего с Улугбеком; Фарс ранее находился у Ибрахим-султана; гератская придворная культура была тесно связана с Байсунгуром и его потомками. Именно эта система после смерти Шахруха превратилась в набор конкурирующих центров силы.</p>
+<div class="callout"><strong>Главная мысль:</strong> после 1447 года распадается не современное централизованное государство, а династическая конструкция, в которой удельные князья уже обладали почти всеми атрибутами самостоятельной власти.</div></section>
+
+<section id="succession"><a class="toplink" href="#top">↑ наверх</a><h2 id="heading-2">2. Кризис престолонаследия: 1447–1451</h2>
+<h3>Ала ад-Даула и гератский двор</h3>
+<p>После смерти Шахруха в Герате быстро выдвинулся его внук <b>Ала ад-Даула Мирза</b>, сын Байсунгура. Его преимущество было почти идеальным: он оказался рядом со столицей, казной и придворным аппаратом. Кроме того, его поддерживала влиятельнейшая вдова Шахруха <b>Гаухаршад</b>.</p>
+<h3>Улугбек</h3>
+<p>Улугбек был не внуком, а живым сыном Шахруха, поэтому его претензия на верховную власть выглядела очень серьёзно. Он выступил из Самарканда, разгромил Ала ад-Даулу при Тарнабе в 1448 году и занял Герат. На короткое время казалось, что державу можно собрать снова.</p>
+<p>Но собственный сын Улугбека, <b>Абд аль-Латиф</b>, восстал против него. В 1449 году конфликт перерос в открытую войну. Улугбек потерпел поражение, был вынужден подчиниться сыну и 27 октября 1449 года был казнён. Абд аль-Латиф затем устранил и своего брата Абд аль-Азиза.</p>
+<h3>Абд аль-Латиф</h3>
+<p>Его правление в Самарканде оказалось крайне коротким: 8 мая 1450 года Абд аль-Латиф был убит в результате заговора знати.</p>
+<h3>Абдаллах ибн Ибрахим</h3>
+<p>Самаркандские эмиры выбрали правителем другого внука Шахруха — <b>Абдаллаха ибн Ибрахима</b>. Он претендовал на центральную власть в Мавераннахре, но за пределами региона признавался слабо. В 1451 году против него выступил <b>Абу Саид Мирза</b> из линии Мираншаха.</p>
+<p>К Абу Саиду присоединился узбекский хан <b>Абулхайр</b>. 22 июня 1451 года войска Абдаллаха были разбиты под Самаркандом, а сам он погиб. Так Мавераннахр перешёл к линии Тимуридов, которая не происходила от Шахруха.</p></section>
+
+<section id="herat"><a class="toplink" href="#top">↑ наверх</a><h2 id="heading-3">3. Борьба за Герат и остатки шахрухидской линии</h2>
+<p>Пока в Самарканде власть переходила от Улугбека к Абд аль-Латифу, затем к Абдаллаху и Абу Саиду, в Хорасане продолжали действовать потомки Байсунгура. Самым удачливым из них стал <b>Абу-ль-Касим Бабур Мирза</b> — не путать с Захир ад-Дином Бабуром XVI века.</p>
+<p>Борьба затрагивала и западные земли. Султан Мухаммад, брат Абу-ль-Касима, владел Фарсом и Ирак-и Аджамом и боролся за Герат. После его поражения и гибели эти области ненадолго достались Абу-ль-Касиму, затем были утрачены в пользу Кара-Коюнлу. Поэтому распад после Шахруха включал не только смену правителей, но и потерю значительной части иранских владений.</p>
+<div class="mini-grid">
+<div class="card"><div class="badge">Хорасан</div><h4>Абу-ль-Касим Бабур</h4><p>Внук Шахруха через Байсунгура. Удерживал Герат и значительную часть Хорасана, возвращал Систан, подавлял мятежи, покровительствовал культуре и молодому Хусейну Байкаре.</p></div>
+<div class="card"><div class="badge">Гератский двор</div><h4>Гаухаршад</h4><p>Вдова Шахруха оставалась политически активной и после его смерти, пытаясь примирять и поддерживать потомков шахрухидской линии.</p></div>
+</div>
+<p>Абу-ль-Касим Бабур умер в Мешхеде 22 марта 1457 года. Его малолетний сын <b>Шах Махмуд</b> оказался слишком слаб, и Герат снова превратился в объект борьбы. В мае 1457 года город занял <b>Ибрахим Мирза</b>, сын Ала ад-Даулы.</p>
+<p>Но уже 19 июля 1457 года Герат захватил <b>Абу Саид</b>. 31 июля он приказал казнить престарелую Гаухаршад, заподозренную в передаче сведений Ибрахиму. Тимуридские хронисты в основном осуждали эту казнь.</p>
+<div class="callout"><strong>Политический итог 1457 года:</strong> первый захват Герата Абу Саидом ослабил шахрухидских претендентов, но борьба за Хорасан продолжилась в 1458–1459 годах.</div></section>
+
+<section id="abusaid"><a class="toplink" href="#top">↑ наверх</a><h2 id="heading-4">4. Абу Саид: почти восстановленная восточная держава Тимуридов</h2>
+<p>Абу Саид Мирза правил Самаркандом с 1451 года. Его первый захват Герата в 1457 году ещё не означал окончательного объединения Хорасана: в 1458 году город занял Джаханшах Кара-Коюнлу. После его ухода Абу Саид вернулся в конце 1458 года; победа над соперниками при Серахсе в 1459 году закрепила его положение.</p>
+<p>Его держава была крупнейшим объединением Тимуридских земель после Шахруха.</p>
+<div class="table-scroll"><table><thead><tr><th>Регион</th><th>Основные центры</th><th>Современная география</th></tr></thead><tbody>
+<tr><td>Мавераннахр</td><td>Самарканд, Бухара</td><td>Узбекистан</td></tr>
+<tr><td>Фергана</td><td>Андижан, Ахси</td><td>Узбекистан / Кыргызстан / Таджикистан</td></tr>
+<tr><td>Хисар и Бадахшан</td><td>Хисар, горные уделы</td><td>Таджикистан / Афганистан</td></tr>
+<tr><td>Хорасан</td><td>Герат, Мешхед, Нишапур, Сабзевар</td><td>Афганистан / Иран</td></tr>
+<tr><td>Балх</td><td>Балх</td><td>Афганистан</td></tr>
+<tr><td>Кабулистан и Газни</td><td>Кабул, Газни</td><td>Афганистан</td></tr>
+<tr><td>Систан</td><td>район Гильменда и Хамуна</td><td>Афганистан / Иран</td></tr>
+<tr><td>Прикаспийские области</td><td>Горган / Астрабад</td><td>северо-восточный Иран</td></tr>
+</tbody></table></div>
+<p>Это была почти восстановленная «восточная половина» мира Тимура: от Ферганы и Самарканда через Афганистан к Хорасану и восточному Ирану. Но западный и центральный Иран прочно ему не принадлежали — там доминировали Кара-Коюнлу, затем Ак-Коюнлу.</p></section>
+
+<section id="1469"><a class="toplink" href="#top">↑ наверх</a><h2 id="heading-5">5. 1469 год: гибель Абу Саида и новый распад</h2>
+<p>В 1468–1469 годах Абу Саид вмешался в борьбу на западе и выступил против <b>Узун Хасана</b>. Кампания закончилась катастрофой: Абу Саид оказался отрезан от снабжения, потерпел поражение и попал в плен.</p>
+<p>В феврале 1469 года Узун Хасан передал пленного Абу Саида <b>Ядгар Мухаммаду</b>, правнуку Гаухаршад. Тот приказал его казнить, что воспринималось также как месть за убийство Гаухаршад.</p>
+<p>После гибели Абу Саида его держава снова распалась на уделы сыновей: Самарканд, Фергана, Хисар, Кабул и другие регионы стали самостоятельными тимуридскими центрами. Хорасан превратился в арену борьбы между <b>Ядгар Мухаммадом</b> и <b>Хусейном Байкарой</b>.</p></section>
+
+<section id="bayqara"><a class="toplink" href="#top">↑ наверх</a><h2 id="heading-6">6. Хусейн Байкара: последний великий Тимурид Герата</h2>
+<p><b>Султан Хусейн Байкара</b> родился в Герате в 1438 году. По отцу он происходил от сына Тимура <b>Умар-Шейха</b>, а по матери — от линии <b>Мираншаха</b>. Он не был потомком Шахруха, хотя вырос внутри того же гератского культурного мира.</p>
+<p>В юности Хусейн находился при дворе Абу-ль-Касима Бабура. Затем годы провёл в борьбе за собственную опору в Хорасане. После гибели Абу Саида в 1469 году он воспользовался вакуумом власти и занял Герат.</p>
+<p>Его положение ещё не было устойчивым: Узун Хасан поддержал Ядгар Мухаммада, которому удалось ненадолго овладеть Гератом. Но в 1470 году Хусейн Байкара вернул столицу и после этого правил практически непрерывно до смерти <b>4 мая 1506 года</b>.</p>
+<div class="callout"><strong>Важное различие:</strong> государство Хусейна Байкары — уже не империя Шахруха и не огромная держава Абу Саида. Это прежде всего устойчивое <b>Хорасанское Тимуридское государство с центром в Герате</b>.</div></section>
+
+<section id="territories"><a class="toplink" href="#top">↑ наверх</a><h2 id="heading-7">7. Что контролировал Хусейн Байкара</h2>
+<div class="table-scroll"><table><thead><tr><th>Зона</th><th>Ключевые пункты</th><th>Характер контроля</th></tr></thead><tbody>
+<tr><td>Центральный Хорасан</td><td>Герат, Бадгис</td><td>Ядро государства</td></tr>
+<tr><td>Западный Хорасан</td><td>Мешхед, Тус, Нишапур, Сабзевар</td><td>Устойчивая часть державы</td></tr>
+<tr><td>Север</td><td>Мерв, Балх</td><td>Часто передавались сыновьям и наместникам</td></tr>
+<tr><td>Западная окраина</td><td>Астрабад / Горган</td><td>Пограничная область</td></tr>
+<tr><td>Юг</td><td>Фарах, части Систана</td><td>Сфера власти Герата</td></tr>
+<tr><td>Хорезм</td><td>Ургенч и зависимые территории</td><td>Принадлежал державе Байкары до захвата Шейбани-ханом в 1505 году</td></tr>
+</tbody></table></div>
+<p>При этом у Байкары <b>не было Самарканда и Бухары</b>, не было Ферганы, а Кабул и Газни существовали в отдельных тимуридских владениях. Западный Иран принадлежал Ак-Коюнлу, а затем Сефевидам.</p>
+<p>Кандагар следует учитывать отдельно: с 1479 года им управлял Зу-н-Нун Аргун, военачальник Хусейна Байкары. Это была периферийная область с сильной местной властью Аргунов, а не столь же непосредственно управляемая территория, как Герат.</p>
+<div class="mini-grid">
+<div class="card"><h4>Абу Саид, ок. 1465</h4><p>Самарканд + Бухара + Фергана + Хисар + Бадахшан + Кабул + Газни + Балх + Герат + значительная часть Хорасана и Систана.</p></div>
+<div class="card"><h4>Хусейн Байкара, ок. 1490</h4><p>Герат + Мерв + Балх + Мешхед + Нишапур + Фарах + Систан + Астрабад, а также Хорезм — прежде всего «Большой Хорасан + Хорезм».</p></div>
+</div></section>
+
+<section id="culture"><a class="toplink" href="#top">↑ наверх</a><h2 id="heading-8">8. Герат при Хусейне Байкаре: культурный пик</h2>
+<p>Если по площади держава Байкары была меньше державы Абу Саида, то по культурному престижу Герат при нём оказался одним из главных центров исламского мира конца XV века.</p>
+<p>Сам Хусейн писал стихи на чагатайском языке под литературным именем <b>Хусайни</b>. Его ближайшим соратником и культурным организатором был <b>Алишер Навои</b>. При дворе также действовал <b>Джами</b>, а художественная школа Герата связана с именем <b>Камал ад-Дина Бехзада</b>.</p>
+<ul><li>персидская и чагатайская литература;</li><li>книжная миниатюра и каллиграфия;</li><li>суфийская учёность;</li><li>архитектурное и придворное меценатство;</li><li>развитая канцелярская культура Тимуридов.</li></ul></section>
+
+<section id="system"><a class="toplink" href="#top">↑ наверх</a><h2 id="heading-9">9. Почему Тимуридские государства снова и снова распадались</h2>
+<p>Главная причина — сама политическая конструкция династии. Тимуридский принц получал не просто должность губернатора, а удел, войско, казну, двор, канцелярию и сеть собственных покровителей.</p>
+<p>Пока над всеми стоял сильный Шахрух — система работала. После смерти верховного правителя каждый крупный принц уже обладал инфраструктурой, необходимой для самостоятельной политики.</p>
+<p>Не существовало и жёсткой нормы вроде «старший сын автоматически получает всё». Разные мужчины рода Тимура могли считать себя законными претендентами, а эмиры и городские элиты выбирали того, кто в данный момент выглядел выгоднее.</p>
+<div class="callout"><strong>Парадокс Тимуридов:</strong> система уделов облегчала управление огромным пространством при сильном государе, но повышала риск борьбы за престол после его смерти.</div></section>
+
+<section id="timeline"><a class="toplink" href="#top">↑ наверх</a><h2 id="heading-10">10. Хронология: 1447–1506</h2>
+<div class="timeline">
+<div class="event"><div class="year">1447</div><div>Смерть Шахруха. Начинается борьба Улугбека, Ала ад-Даулы и других Тимуридов.</div></div>
+<div class="event"><div class="year">1448</div><div>Улугбек разбивает Ала ад-Даулу и занимает Герат.</div></div>
+<div class="event"><div class="year">1449</div><div>Восстание Абд аль-Латифа; Улугбек свергнут и казнён.</div></div>
+<div class="event"><div class="year">1450</div><div>Абд аль-Латиф убит. В Самарканде утверждается Абдаллах ибн Ибрахим.</div></div>
+<div class="event"><div class="year">1451</div><div>Абу Саид с помощью Абулхайр-хана разбивает Абдаллаха и берёт Самарканд.</div></div>
+<div class="event"><div class="year">1451–57</div><div>Абу-ль-Касим Бабур удерживает Герат и значительную часть Хорасана.</div></div>
+<div class="event"><div class="year">1457</div><div>Смерть Абу-ль-Касима Бабура; новая борьба за Герат. Абу Саид берёт город 19 июля; 31 июля казнена Гаухаршад.</div></div>
+<div class="event"><div class="year">1458</div><div>Джаханшах занимает Герат; в конце года Абу Саид возвращает город.</div></div>
+<div class="event"><div class="year">1459</div><div>Победа при Серахсе закрепляет власть Абу Саида в Хорасане.</div></div>
+<div class="event"><div class="year">1469</div><div>Абу Саид терпит поражение от Узун Хасана и казнён. Его владения снова дробятся.</div></div>
+<div class="event"><div class="year">1469–70</div><div>Хусейн Байкара и Ядгар Мухаммад борются за Герат.</div></div>
+<div class="event"><div class="year">1470</div><div>Хусейн Байкара окончательно возвращает Герат.</div></div>
+<div class="event"><div class="year">1470–1506</div><div>Герат — столица устойчивой Хорасанской державы Байкары и культурный центр позднего Тимуридского мира.</div></div>
+<div class="event"><div class="year">1505</div><div>Шейбани-хан захватывает Хорезм.</div></div>
+<div class="event"><div class="year">1506</div><div>Хусейн Байкара умирает во время подготовки похода против Шейбани.</div></div>
+<div class="event"><div class="year">1507</div><div>Шейбани-хан берёт Герат — уже следующий эпизод, конец крупной Тимуридской власти в Хорасане.</div></div>
+</div></section>
+
+<section id="genealogy"><a class="toplink" href="#top">↑ наверх</a><h2 id="heading-11">11. Упрощённая генеалогическая схема</h2>
+<div class="table-scroll"><table><caption>Основные линии родства. Стрелка означает переход от родителя к ребёнку.</caption><thead><tr><th>Ветвь</th><th>Последовательность поколений</th></tr></thead><tbody>
+<tr><td>Шахрухиды: Самарканд</td><td>Тимур → Шахрух → Улугбек → Абд аль-Латиф и Абд аль-Азиз</td></tr>
+<tr><td>Шахрухиды: Герат</td><td>Тимур → Шахрух → Байсунгур → Ала ад-Даула → Ибрахим Мирза</td></tr>
+<tr><td>Абу-ль-Касим Бабур</td><td>Тимур → Шахрух → Байсунгур → Абу-ль-Касим Бабур → Шах Махмуд</td></tr>
+<tr><td>Ядгар Мухаммад</td><td>Тимур → Шахрух → Байсунгур → Султан Мухаммад → Ядгар Мухаммад</td></tr>
+<tr><td>Абдаллах</td><td>Тимур → Шахрух → Ибрахим-султан → Абдаллах Мирза</td></tr>
+<tr><td>Абу Саид и Бабур</td><td>Тимур → Мираншах → Мухаммад Мирза → Абу Саид → Умар-Шейх Мирза II → Захир ад-Дин Бабур</td></tr>
+<tr><td>Другие сыновья Абу Саида</td><td>Абу Саид → Султан Ахмад, Султан Махмуд, Улугбек Мирза II (Кабул)</td></tr>
+<tr><td>Хусейн Байкара</td><td>Тимур → Умар-Шейх Мирза I → Байкара Мирза → Гияс ад-Дин Мансур → Султан Хусейн Байкара</td></tr>
+<tr><td>Сыновья Хусейна</td><td>Хусейн Байкара → Бади аз-Заман, Музаффар Хусейн, Ибрахим Хусейн и другие; Бади аз-Заман → Мухаммад Мумин</td></tr>
+</tbody></table></div>
+<p class="footnote">Схема намеренно сокращена: показаны только линии и лица, непосредственно нужные для понимания событий 1447–1506 годов.</p></section>
+
+<section id="sources"><a class="toplink" href="#top">↑ наверх</a><h2 id="heading-12">12. Основные справочные источники</h2>
+<ol>
+<li><a href="https://www.iranicaonline.org/articles/herat-iii/" target="_blank" rel="noopener noreferrer">Encyclopaedia Iranica: Herat iii. History, Medieval Period</a></li>
+<li><a href="https://www.iranicaonline.org/articles/ala-al-dawla-rokn-al-din-mirza-b/" target="_blank" rel="noopener noreferrer">Encyclopaedia Iranica: ʿAlāʾ-al-Dawla</a></li>
+<li><a href="https://www.iranicaonline.org/articles/abd-al-latif-mirza-sultan-timurid-ruler-in-samarqand-1449-50/" target="_blank" rel="noopener noreferrer">Encyclopaedia Iranica: ʿAbd-al-Laṭīf Mīrzā</a></li>
+<li><a href="https://www.iranicaonline.org/articles/abdallah-b-ebrahim-timurid-khan-k-1451/" target="_blank" rel="noopener noreferrer">Encyclopaedia Iranica: ʿAbdallāh b. Ebrāhīm</a></li>
+<li><a href="https://www.iranicaonline.org/articles/babor-abul-qasem-mirza/" target="_blank" rel="noopener noreferrer">Encyclopaedia Iranica: Bābor, Abu’l-Qāsem Mīrzā</a></li>
+<li><a href="https://www.iranicaonline.org/articles/gowhar-sad-aga/" target="_blank" rel="noopener noreferrer">Encyclopaedia Iranica: Gowhar-Šād Āḡā</a></li>
+<li><a href="https://www.iranicaonline.org/articles/ahrar-kaja-obaydallah-b/" target="_blank" rel="noopener noreferrer">Encyclopaedia Iranica: Ḵᵛāja ʿObaydallāh Aḥrār</a></li>
+<li><a href="https://www.iranicaonline.org/articles/hosayn-bayqara/" target="_blank" rel="noopener noreferrer">Encyclopaedia Iranica: Ḥosayn Bāyqarā</a></li>
+<li><a href="https://www.iranicaonline.org/articles/jami-i/" target="_blank" rel="noopener noreferrer">Encyclopaedia Iranica: Jāmi i. Life and Works</a></li>
+</ol>
+<p class="footnote">Границы Тимуридских владений XV века менялись часто и зависели от личной верности наместников, поэтому перечисление территорий показывает устойчивое ядро и наиболее характерный максимум, а не современную «жёсткую» границу.</p>
+</section>
+<section class="revision-notes" id="revision-notes"><h2 id="heading-13">Примечания к редакции</h2><p class="revision-meta">Редакция от 21 октября 2026 года. Ниже — источники для уточнений и перечень изменений.</p><ul><li><a href="https://islamansiklopedisi.org.tr/ebu-said-mirza-han" target="_blank" rel="noopener noreferrer">TDV: Ebû Said Mirza Han</a>. Родословная Абу Саида; здесь дата его казни — 5 февраля 1469 года.</li><li><a href="https://www.iranicaonline.org/articles/hosayn-bayqara/" target="_blank" rel="noopener noreferrer">Iranica: Ḥosayn Bāyqarā</a>. В этой статье казнь Абу Саида датирована 17 февраля; поэтому в тексте указан только месяц.</li><li><a href="https://www.iranicaonline.org/articles/kandahar-from-the-mongol-invasion-through-the-safavid-era/" target="_blank" rel="noopener noreferrer">Iranica: Kandahar IV</a>. Назначение Зу-н-Нуна Аргуна в Кандагар в 1479 году.</li><li><a href="https://www.iranicaonline.org/articles/babor-abul-qasem-mirza/" target="_blank" rel="noopener noreferrer">Iranica: Bābor, Abu’l-Qāsem Mīrzā</a>. Борьба с Султаном Мухаммадом и потеря западных владений.</li><li><a href="https://mathshistory.st-andrews.ac.uk/Biographies/Ulugh_Beg/" target="_blank" rel="noopener noreferrer">University of St Andrews: Ulugh Beg</a>. Дата смерти Улугбека.</li></ul><details><summary>Что изменено в этом файле</summary><ul><li>Исправлена генеалогия: убраны ложные пропуски поколений, сыновья Хусейна Байкары отнесены к нему, а не к его деду.</li><li>Для казни Абу Саида оставлен февраль 1469 года: справочные источники расходятся в точном дне.</li><li>Добавлен Кандагар Аргунов как зависимая периферия державы Байкары.</li><li>Добавлена борьба за Фарс и Ирак-и Аджам, объясняющая территориальное сокращение Тимуридской державы.</li><li>Исправлена дата гибели Улугбека: 27 октября 1449 года.</li><li>Восстановлена последовательность борьбы за Герат в 1457–1459 годах.</li><li>Устранён преждевременный вывод об окончательном объединении уже в 1457 году.</li><li>Согласована хронология Герата с основным текстом.</li><li>Смягчена чрезмерно категоричная причинная формулировка о распаде.</li></ul></details></section></article></div></main><div class="cycle-bar" aria-label="Навигация по циклу"><a href="timurids_mughals_contents.html">Все главы и перечень исправлений</a><a href="shaybani_conquest_of_mawarannahr.html">Следующая глава →</a></div>
+</body></html>
