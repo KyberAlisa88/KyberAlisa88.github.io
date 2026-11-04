@@ -20,6 +20,20 @@ table{width:100%;border-collapse:collapse}th,td{padding:12px 13px;border-bottom:
 details{background:#15101d;border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0}summary{cursor:pointer;font-weight:800;color:#eee3fa}.small{font-size:.9rem;color:var(--muted)}
 footer{padding:12px 4px 36px;color:var(--muted);font-size:.9rem}
 @media(max-width:820px){.grid,.loop{grid-template-columns:1fr}.arrow{transform:rotate(90deg)}.wrap{padding:14px}.hero{padding:34px 22px}section{padding:21px}}
+
+/* Phone layout: preserve the two-column tables on desktop, stack cells into cards on mobile. */
+@media(max-width:640px){
+  .mobile-stack,.mobile-stack tbody{display:block;width:100%;min-width:0}
+  .mobile-stack tr{display:block;width:100%;min-width:0;margin:0 0 12px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel)}
+  .mobile-stack tr:first-child{display:none}
+  .mobile-stack td{display:block;width:100%;min-width:0;padding:11px 13px;border-bottom:0;overflow-wrap:anywhere}
+  .mobile-stack td+td{border-top:1px solid var(--line)}
+  .mobile-stack td::before{display:block;margin-bottom:4px;font-size:.78rem;font-weight:800;color:var(--muted)}
+  .criterion-table td:first-child::before{content:"Ситуация"}
+  .criterion-table td:nth-child(2)::before{content:"Как классифицировать"}
+  .terms-table td:first-child::before{content:"Русский термин"}
+  .terms-table td:nth-child(2)::before{content:"Английский вариант"}
+}
 </style>
 </head>
 <body><div class="wrap">
@@ -57,7 +71,7 @@ footer{padding:12px 4px 36px;color:var(--muted);font-size:.9rem}
 <div class="card"><span class="tag meta">F</span><h3>Взаимное воспроизводство</h3><p>Репутация подпитывает конфликт; конфликт порождает новые реакции и события, которые вновь включаются в коллективную репутацию.</p></div>
 <div class="card"><span class="tag archive">Порог</span><h3>R + C + F</h3><p>Три условия действуют совместно. Знак «+» обозначает сочетание, а не арифметическую сумму: отсутствие любого условия не позволяет уверенно говорить о Позоре в строгом смысле модели.</p></div>
 </div>
-<table><tr><th>Ситуация</th><th>Как классифицировать</th></tr>
+<table class="mobile-stack criterion-table"><tr><th>Ситуация</th><th>Как классифицировать</th></tr>
 <tr><td>Есть отдельные неудачи и отрицательные отзывы, но репутация не влияет на новые события.</td><td><b>Обычная плохая репутация</b>.</td></tr>
 <tr><td>Негативный образ сам себя поддерживает, но носитель не вступает с ним в открытое противостояние.</td><td><b>Репутационная инерция / стигматизация</b>, ещё не Позор.</td></tr>
 <tr><td>Человек оспаривает отношение к себе, но до этого не существовало самовоспроизводящейся репутации.</td><td><b>Репутационный спор</b>, ещё не Позор.</td></tr>
@@ -172,7 +186,7 @@ footer{padding:12px 4px 36px;color:var(--muted);font-size:.9rem}
 
 <section id="english"><h2>11. Английский перевод</h2>
 <p>Наиболее удачное собственное имя — <b>The Disgrace</b>. Оно лучше <i>shame</i> или <i>embarrassment</i>, потому что речь не о внутреннем чувстве стыда, а о внешнем социально-репутационном процессе.</p>
-<table><tr><th>Русский термин</th><th>Английский вариант</th></tr><tr><td>Позор</td><td><b>The Disgrace</b></td></tr><tr><td>протопозор</td><td>Proto-Disgrace</td></tr><tr><td>событие Позора</td><td>Disgrace event</td></tr><tr><td>позорогенный</td><td>disgrace-generating / disgrace-producing</td></tr><tr><td>активный Позор</td><td>Active Disgrace</td></tr><tr><td>автономный Позор</td><td>Autonomous Disgrace</td></tr><tr><td>канон Позора</td><td>The Disgrace canon</td></tr><tr><td>репутационная петля</td><td>self-reinforcing reputational loop</td></tr><tr><td>репутационный конфликт</td><td>reputational conflict</td></tr><tr><td>Мета-Позор</td><td>Meta-Disgrace</td></tr></table>
+<table class="mobile-stack terms-table"><tr><th>Русский термин</th><th>Английский вариант</th></tr><tr><td>Позор</td><td><b>The Disgrace</b></td></tr><tr><td>протопозор</td><td>Proto-Disgrace</td></tr><tr><td>событие Позора</td><td>Disgrace event</td></tr><tr><td>позорогенный</td><td>disgrace-generating / disgrace-producing</td></tr><tr><td>активный Позор</td><td>Active Disgrace</td></tr><tr><td>автономный Позор</td><td>Autonomous Disgrace</td></tr><tr><td>канон Позора</td><td>The Disgrace canon</td></tr><tr><td>репутационная петля</td><td>self-reinforcing reputational loop</td></tr><tr><td>репутационный конфликт</td><td>reputational conflict</td></tr><tr><td>Мета-Позор</td><td>Meta-Disgrace</td></tr></table>
 <div class="quote">A self-reinforcing bad reputation becomes <b>The Disgrace</b> when its bearer openly challenges the group’s image of them and its rules of judgment, and that confrontation reinforces the reputation.</div>
 </section>
 
