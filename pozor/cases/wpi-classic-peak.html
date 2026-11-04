@@ -15,8 +15,10 @@ h1{font-size:clamp(2.5rem,7vw,4.8rem);line-height:1.08;letter-spacing:-.045em;ma
 table{border-collapse:collapse;width:100%;margin:17px 0}th,td{padding:11px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}th{background:#281a35}tr:last-child td{border:0}.sources{padding-left:22px}.sources li{margin:12px 0}.sources li::marker{color:var(--accent)}.page-foot{color:var(--muted);font-size:.86rem;padding:23px 5px}
 @media(max-width:700px){.wrap{padding:11px}.hero,section{padding:22px}.grid{grid-template-columns:1fr}h1{font-size:2.55rem}table{font-size:.87rem}td,th{padding:8px}.timeline{padding-left:21px}.event:before{left:-29px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
+/* Keep long table entries inside their columns at desktop and tablet widths. */
+table{overflow-wrap:anywhere}
 /* Mobile readability across the Pozor archive: no clipped tables or unbroken source links. */
-@media(max-width:640px){
+@media(max-width:820px){
   .wrap,.hero,section,.grid,.card,.note,.quote,.timeline,.event,.msg,details,.split,.media-grid,figure,blockquote{min-width:0}
   :where(p,li,a,h1,h2,h3,div,blockquote,td,summary,figcaption,code){overflow-wrap:anywhere}
   .nav a,nav a{max-width:100%;min-width:0;white-space:normal}
