@@ -11,6 +11,21 @@
 .msg .spoken{margin:5px 0 0;white-space:pre-line}
 .ref{color:#a9a1b8;font-size:.78rem;white-space:nowrap}
 .timeline .event{margin-bottom:28px}
+
+/* Mobile readability across the Pozor archive: no clipped tables or unbroken source links. */
+@media(max-width:640px){
+  .wrap,.hero,section,.grid,.card,.note,.quote,.timeline,.event,.msg,details,.split,.media-grid,figure,blockquote{min-width:0}
+  :where(p,li,a,h1,h2,h3,div,blockquote,td,summary,figcaption,code){overflow-wrap:anywhere}
+  .nav a,nav a{max-width:100%;min-width:0;white-space:normal}
+  .ref{white-space:normal;overflow-wrap:anywhere}
+  img,video,iframe,svg{max-width:100%;height:auto}
+  table.mobile-cards,table.mobile-cards tbody{display:block;width:100%;min-width:0}
+  table.mobile-cards tr{display:block;width:100%;min-width:0;margin:0 0 12px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel)}
+  table.mobile-cards tr:first-child{display:none}
+  table.mobile-cards td{display:block;width:100%;max-width:100%;min-width:0;padding:11px 13px;border:0;overflow-wrap:anywhere}
+  table.mobile-cards td+td{border-top:1px solid var(--line)}
+  table.mobile-cards td::before{content:attr(data-label);display:block;margin-bottom:4px;font-size:.78rem;font-weight:800;color:var(--muted)}
+}
 </style></head><body><main class="wrap">
 <header class="hero"><div class="eyebrow">ПОЗОР / документальные кейсы / август 2024</div><h1>Отказ в роли ПМ и мегарецидив</h1>
 <p class="lead">Почему спор об административном назначении 25 августа 2024 года превратился в разбирательство о годах конфликтов, взаимных извинениях, доверии, дружбе и праве объявить себя «исправившимся».</p>
