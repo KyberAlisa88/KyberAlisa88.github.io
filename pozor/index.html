@@ -34,6 +34,21 @@ footer{padding:12px 4px 36px;color:var(--muted);font-size:.9rem}
   .terms-table td:first-child::before{content:"Русский термин"}
   .terms-table td:nth-child(2)::before{content:"Английский вариант"}
 }
+
+/* Mobile readability across the Pozor archive: no clipped tables or unbroken source links. */
+@media(max-width:640px){
+  .wrap,.hero,section,.grid,.card,.note,.quote,.timeline,.event,.msg,details,.split,.media-grid,figure,blockquote{min-width:0}
+  :where(p,li,a,h1,h2,h3,div,blockquote,td,summary,figcaption,code){overflow-wrap:anywhere}
+  .nav a,nav a{max-width:100%;min-width:0;white-space:normal}
+  .ref{white-space:normal;overflow-wrap:anywhere}
+  img,video,iframe,svg{max-width:100%;height:auto}
+  table.mobile-cards,table.mobile-cards tbody{display:block;width:100%;min-width:0}
+  table.mobile-cards tr{display:block;width:100%;min-width:0;margin:0 0 12px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel)}
+  table.mobile-cards tr:first-child{display:none}
+  table.mobile-cards td{display:block;width:100%;max-width:100%;min-width:0;padding:11px 13px;border:0;overflow-wrap:anywhere}
+  table.mobile-cards td+td{border-top:1px solid var(--line)}
+  table.mobile-cards td::before{content:attr(data-label);display:block;margin-bottom:4px;font-size:.78rem;font-weight:800;color:var(--muted)}
+}
 </style>
 </head>
 <body><div class="wrap">
