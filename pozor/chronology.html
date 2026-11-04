@@ -57,6 +57,21 @@ summary{cursor:pointer;font-weight:800;color:var(--accent2)}
 .section-line{height:1px;background:var(--line);margin:21px 0}
 footer{color:var(--muted);font-size:.87rem;padding:26px 4px}
 @media(max-width:750px){.wrap{padding:12px}.hero{padding:32px 21px}section{padding:22px 19px}.grid{grid-template-columns:1fr}.event{padding-left:41px}.timeline:before{left:10px}.event:before{left:3px}th,td{padding:9px;font-size:.9rem}}
+
+/* Mobile readability across the Pozor archive: no clipped tables or unbroken source links. */
+@media(max-width:640px){
+  .wrap,.hero,section,.grid,.card,.note,.quote,.timeline,.event,.msg,details,.split,.media-grid,figure,blockquote{min-width:0}
+  :where(p,li,a,h1,h2,h3,div,blockquote,td,summary,figcaption,code){overflow-wrap:anywhere}
+  .nav a,nav a{max-width:100%;min-width:0;white-space:normal}
+  .ref{white-space:normal;overflow-wrap:anywhere}
+  img,video,iframe,svg{max-width:100%;height:auto}
+  table.mobile-cards,table.mobile-cards tbody{display:block;width:100%;min-width:0}
+  table.mobile-cards tr{display:block;width:100%;min-width:0;margin:0 0 12px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel)}
+  table.mobile-cards tr:first-child{display:none}
+  table.mobile-cards td{display:block;width:100%;max-width:100%;min-width:0;padding:11px 13px;border:0;overflow-wrap:anywhere}
+  table.mobile-cards td+td{border-top:1px solid var(--line)}
+  table.mobile-cards td::before{content:attr(data-label);display:block;margin-bottom:4px;font-size:.78rem;font-weight:800;color:var(--muted)}
+}
 </style>
 </head>
 <body><div class="wrap">
@@ -182,12 +197,12 @@ footer{color:var(--muted);font-size:.87rem;padding:26px 4px}
 <div class="number">04 / почему именно 3 апреля</div>
 <h2>Масштаб, а не первое появление</h2>
 <p>3 апреля не следует называть днём рождения всех негативных высказываний об ОБД: они документируются раньше. Но эта дата сохраняет значение <b>дня ноль Большого Позора</b>, поскольку в реконструкции участников с ней связаны два качественных изменения: утрата административных полномочий и резкое расширение негативного отношения внутри сообщества.</p>
-<table>
+<table class="mobile-cards">
 <thead><tr><th>До 3 апреля</th><th>После 3 апреля</th></tr></thead>
 <tbody>
-<tr><td>Позор уже возникает и распространяется, но отношение к ОБД неоднородно.</td><td>Негативная репутация, по свидетельствам, становится преобладающей.</td></tr>
-<tr><td>ОБД сохраняет модерские полномочия.</td><td>Потеря модерки становится институциональным последствием кризиса.</td></tr>
-<tr><td>Претензии к деятельности ОБД и прежний личный конфликт соединяются.</td><td>Критика последующих действий всё чаще проходит через уже закрепившийся образ.</td></tr>
+<tr><td data-label="До 3 апреля">Позор уже возникает и распространяется, но отношение к ОБД неоднородно.</td><td data-label="После 3 апреля">Негативная репутация, по свидетельствам, становится преобладающей.</td></tr>
+<tr><td data-label="До 3 апреля">ОБД сохраняет модерские полномочия.</td><td data-label="После 3 апреля">Потеря модерки становится институциональным последствием кризиса.</td></tr>
+<tr><td data-label="До 3 апреля">Претензии к деятельности ОБД и прежний личный конфликт соединяются.</td><td data-label="После 3 апреля">Критика последующих действий всё чаще проходит через уже закрепившийся образ.</td></tr>
 </tbody></table>
 <div class="note warning"><b>Ограничение реконструкции:</b> «всеобщность» основана на воспоминаниях участников, а не на подсчёте позиций каждого пользователя удалённого сервера. Поэтому документ не утверждает, что после 3 апреля буквально каждый участник выступал против ОБД. Также необходимо отделять обсуждавшиеся ОБД планы и поиск средств для краша от самого краша: ОБД его не совершил.</div>
 </section>
