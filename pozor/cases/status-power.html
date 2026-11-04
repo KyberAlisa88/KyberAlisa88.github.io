@@ -32,6 +32,21 @@ table{border-collapse:collapse;width:100%;margin:15px 0}th,td{padding:11px 12px;
 .page-foot{color:var(--muted);font-size:.85rem;padding:25px 5px}
 @media(max-width:720px){.wrap{padding:12px}.hero,section{padding:24px 20px}.grid{grid-template-columns:1fr}.timeline{padding-left:21px}.event:before{left:-29px}th,td{padding:8px;font-size:.9rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Mobile readability across the Pozor archive: no clipped tables or unbroken source links. */
+@media(max-width:640px){
+  .wrap,.hero,section,.grid,.card,.note,.quote,.timeline,.event,.msg,details,.split,.media-grid,figure,blockquote{min-width:0}
+  :where(p,li,a,h1,h2,h3,div,blockquote,td,summary,figcaption,code){overflow-wrap:anywhere}
+  .nav a,nav a{max-width:100%;min-width:0;white-space:normal}
+  .ref{white-space:normal;overflow-wrap:anywhere}
+  img,video,iframe,svg{max-width:100%;height:auto}
+  table.mobile-cards,table.mobile-cards tbody{display:block;width:100%;min-width:0}
+  table.mobile-cards tr{display:block;width:100%;min-width:0;margin:0 0 12px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel)}
+  table.mobile-cards tr:first-child{display:none}
+  table.mobile-cards td{display:block;width:100%;max-width:100%;min-width:0;padding:11px 13px;border:0;overflow-wrap:anywhere}
+  table.mobile-cards td+td{border-top:1px solid var(--line)}
+  table.mobile-cards td::before{content:attr(data-label);display:block;margin-bottom:4px;font-size:.78rem;font-weight:800;color:var(--muted)}
+}
 </style></head>
 <body><main class="wrap">
 <header class="hero">
@@ -79,13 +94,13 @@ table{border-collapse:collapse;width:100%;margin:15px 0}th,td{padding:11px 12px;
 <p>Однако в сохранившихся материалах есть и другое датированное свидетельство. <b>17 августа 2026 года</b> Gilgamesh в канале «храм-аутмарры» перечислял старые претензии к деятельности ОБД. Он утверждал, что основная работа над экономикой выполнялась другими участниками, обвинял ОБД в отсутствии вклада в модерацию и провале поручения на втором БКРП. В тот момент ОБД уже не участвовал в беседе. <a href="#s4">[4]</a></p>
 <div class="quote"><blockquote>«Ничего не сделал для экономики, всё в основном делал Игнат/Сипуха/Я за всю историю Бункера».</blockquote><div class="src">Gilgamesh, 17.08.2026, 17:08 · «храм-аутмарры», ID 1538912510529380432 <a href="#s4">[4]</a></div></div>
 <div class="quote"><blockquote>«Ничего не сделал для модерации, правил и вообще, чтобы как-то удерживать “токсичное болото”. Один раз на втором БКРП дали задание и то проебал».</blockquote><div class="src">Gilgamesh, тот же перечень претензий; оценка участника, не журнал исполнения поручений <a href="#s4">[4]</a></div></div>
-<table>
+<table class="mobile-cards">
 <thead><tr><th>Положение</th><th>Основание и предел проверки</th></tr></thead>
 <tbody>
-<tr><td>ОБД получил модерку на БКРП в январе 2023 года</td><td>Свидетельство участницы сообщества; исходные сообщения о назначении на удалённом сервере пока не найдены.</td></tr>
-<tr><td>Существовали претензии к его работе и исполнению обязанностей</td><td>Свидетельства очевидцев и сообщение Gilgamesh от 17 августа 2026 года. Наличие претензий подтверждено; полная проверка их справедливости затруднена.</td></tr>
-<tr><td>ОБД злоупотреблял полномочиями для самоутверждения</td><td>Прямое свидетельство очевидца. Нужны конкретные случаи наказаний, назначения ролей и решения администрации, чтобы определить масштаб и механизм злоупотреблений.</td></tr>
-<tr><td>ОБД стремился подчинить себе всё сообщество</td><td>Гипотеза о намерениях, а не документированная конечная цель.</td></tr>
+<tr><td data-label="Положение">ОБД получил модерку на БКРП в январе 2023 года</td><td data-label="Основание и предел проверки">Свидетельство участницы сообщества; исходные сообщения о назначении на удалённом сервере пока не найдены.</td></tr>
+<tr><td data-label="Положение">Существовали претензии к его работе и исполнению обязанностей</td><td data-label="Основание и предел проверки">Свидетельства очевидцев и сообщение Gilgamesh от 17 августа 2026 года. Наличие претензий подтверждено; полная проверка их справедливости затруднена.</td></tr>
+<tr><td data-label="Положение">ОБД злоупотреблял полномочиями для самоутверждения</td><td data-label="Основание и предел проверки">Прямое свидетельство очевидца. Нужны конкретные случаи наказаний, назначения ролей и решения администрации, чтобы определить масштаб и механизм злоупотреблений.</td></tr>
+<tr><td data-label="Положение">ОБД стремился подчинить себе всё сообщество</td><td data-label="Основание и предел проверки">Гипотеза о намерениях, а не документированная конечная цель.</td></tr>
 </tbody></table>
 <p>Если бездействие при исполнении обычных обязанностей сочеталось с активным использованием власти в личных конфликтах, возникает важный признак: должность имела для ОБД самостоятельную ценность как средство влияния и самоутверждения. Но из одних поздних обвинений нельзя восстановить частоту и обстоятельства всех предполагаемых злоупотреблений.</p>
 </section>
